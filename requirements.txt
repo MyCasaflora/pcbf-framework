@@ -1,0 +1,25 @@
+# PCBF 2.1 Framework - Python Dependencies
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# HTTP Client
+requests==2.31.0
+urllib3==2.1.0
+
+# Data Processing
+pandas==2.1.3
+numpy==1.26.2
+
+# NLP (optional, für erweiterte Features)
+nltk==3.8.1
+
+# Machine Learning (optional, für zukünftige Erweiterungen)
+scikit-learn==1.3.2
+joblib==1.3.2
+
+# Utilities
+python-dotenv==1.0.0
+

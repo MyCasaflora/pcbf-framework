@@ -1,0 +1,39 @@
+[Unit]
+Description=PCBF 2.1 CSV Validation UI
+After=network.target
+Documentation=https://github.com/your-org/pcbf-framework
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/pcbf_framework
+Environment="PATH=/usr/bin:/usr/local/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="OPENROUTER_API_KEY=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"
+
+# Hauptprozess
+ExecStart=/usr/bin/python3 /home/ubuntu/pcbf_framework/validation_ui_csv.py
+
+# Restart-Konfiguration
+Restart=always
+RestartSec=10
+StartLimitInterval=200
+StartLimitBurst=5
+
+# Logging
+StandardOutput=append:/home/ubuntu/pcbf_framework/logs/service.log
+StandardError=append:/home/ubuntu/pcbf_framework/logs/service-error.log
+
+# Sicherheit
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Ressourcen-Limits
+LimitNOFILE=65536
+MemoryMax=2G
+CPUQuota=200%
+
+[Install]
+WantedBy=multi-user.target
+

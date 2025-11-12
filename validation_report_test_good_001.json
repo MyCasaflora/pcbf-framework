@@ -1,0 +1,176 @@
+{
+  "profile_id": "test_good_001",
+  "overall_status": "PASS",
+  "score": 96.0,
+  "timestamp": "2025-11-12T01:54:21.396585",
+  "checks": [
+    {
+      "name": "input_bio_present",
+      "status": "PASS",
+      "message": "Bio vorhanden (63 Wörter)",
+      "severity": "info"
+    },
+    {
+      "name": "input_bio_length",
+      "status": "WARNING",
+      "message": "Bio kurz (63 Wörter, empfohlen: >200)",
+      "severity": "info"
+    },
+    {
+      "name": "input_categories_present",
+      "status": "PASS",
+      "message": "Categories vorhanden: Künstliche Intelligenz (KI) • Softwareentwicklung ...",
+      "severity": "info"
+    },
+    {
+      "name": "input_social_metrics",
+      "status": "PASS",
+      "message": "Social Metrics: 5000 Follower, 1200 Following (Ratio: 4.17)",
+      "severity": "info"
+    },
+    {
+      "name": "disc_score_sum",
+      "status": "PASS",
+      "message": "DISC-Score-Summe korrekt (1.00)",
+      "severity": "info"
+    },
+    {
+      "name": "disc_primary_highest",
+      "status": "PASS",
+      "message": "Primary Type D hat höchsten Score (0.37)",
+      "severity": "info"
+    },
+    {
+      "name": "disc_bio_plausibility",
+      "status": "PASS",
+      "message": "DISC-Typ D plausibel mit Bio-Keywords",
+      "severity": "info"
+    },
+    {
+      "name": "disc_confidence_range",
+      "status": "PASS",
+      "message": "DISC-Confidence im erwarteten Bereich (70.0%)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_openness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension openness im Range (0.82)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_conscientiousness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension conscientiousness im Range (0.72)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_extraversion_range",
+      "status": "PASS",
+      "message": "NEO-Dimension extraversion im Range (0.59)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_agreeableness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension agreeableness im Range (0.55)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_neuroticism_range",
+      "status": "PASS",
+      "message": "NEO-Dimension neuroticism im Range (0.27)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_confidence_range",
+      "status": "PASS",
+      "message": "NEO-Confidence im erwarteten Bereich (50.0%)",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_code_format",
+      "status": "PASS",
+      "message": "Holland-Code Format korrekt (IE)",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_primary_match",
+      "status": "PASS",
+      "message": "Primary Type I stimmt mit Holland-Code überein",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_score_sum",
+      "status": "PASS",
+      "message": "RIASEC-Score-Summe plausibel (1.00)",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_confidence_categories",
+      "status": "PASS",
+      "message": "RIASEC-Confidence mit Categories im erwarteten Bereich (75.0%)",
+      "severity": "info"
+    },
+    {
+      "name": "persuasion_score_sum",
+      "status": "PASS",
+      "message": "Persuasion-Score-Summe plausibel (3.09)",
+      "severity": "info"
+    },
+    {
+      "name": "persuasion_primary_score",
+      "status": "PASS",
+      "message": "Primary Persuasion-Score ausreichend (0.86)",
+      "severity": "info"
+    },
+    {
+      "name": "persuasion_confidence_range",
+      "status": "PASS",
+      "message": "Persuasion-Confidence im erwarteten Bereich (70.0%)",
+      "severity": "info"
+    },
+    {
+      "name": "cross_disc_neo_d_extraversion",
+      "status": "WARNING",
+      "message": "D-Typ mit niedriger Extraversion (0.59) ungewöhnlich",
+      "severity": "info"
+    },
+    {
+      "name": "cross_disc_comm_style",
+      "status": "PASS",
+      "message": "D-Typ + direkter Kommunikationsstil konsistent",
+      "severity": "info"
+    },
+    {
+      "name": "confidence_overall_good",
+      "status": "PASS",
+      "message": "Overall Confidence gut (77.0%)",
+      "severity": "info"
+    },
+    {
+      "name": "warnings_consistency",
+      "status": "PASS",
+      "message": "Warnungen konsistent (1 Warnungen)",
+      "severity": "info"
+    },
+    {
+      "name": "string_format_valid",
+      "status": "PASS",
+      "message": "Profil-String Format korrekt",
+      "severity": "info"
+    },
+    {
+      "name": "string_length",
+      "status": "PASS",
+      "message": "Profil-String Länge OK (91 Zeichen)",
+      "severity": "info"
+    }
+  ],
+  "summary": {
+    "total_checks": 27,
+    "passed": 25,
+    "warnings": 2,
+    "failed": 0
+  }
+}

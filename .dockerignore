@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.pytest_cache
+.coverage
+
+# Logs
+logs/*.log
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test-Dateien
+test_*.csv
+test_*.py
+
+# Dokumentation (optional, wenn Image klein bleiben soll)
+# *.md
+# docs/
+
+# Archiv
+*.tar.gz
+*.zip
+

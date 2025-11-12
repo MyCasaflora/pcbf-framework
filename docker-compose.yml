@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  pcbf-csv-ui:
+    build: .
+    container_name: pcbf-csv-ui
+    ports:
+      - "8002:8002"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - PORT=8002
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+# Optionales Netzwerk (für mehrere Container)
+networks:
+  default:
+    name: pcbf-network
+

@@ -1,0 +1,182 @@
+{
+  "profile_id": "test_poor_003",
+  "overall_status": "FAIL",
+  "score": 66.0,
+  "timestamp": "2025-11-12T01:54:31.642066",
+  "checks": [
+    {
+      "name": "input_bio_present",
+      "status": "PASS",
+      "message": "Bio vorhanden (3 Wörter)",
+      "severity": "info"
+    },
+    {
+      "name": "input_bio_length",
+      "status": "WARNING",
+      "message": "Bio sehr kurz (3 Wörter, empfohlen: >200)",
+      "severity": "warning"
+    },
+    {
+      "name": "input_categories_present",
+      "status": "WARNING",
+      "message": "Keine Categories vorhanden (RIASEC-Confidence reduziert)",
+      "severity": "info"
+    },
+    {
+      "name": "input_social_metrics",
+      "status": "PASS",
+      "message": "Social Metrics: 500 Follower, 1000 Following (Ratio: 0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "disc_score_sum",
+      "status": "PASS",
+      "message": "DISC-Score-Summe korrekt (1.00)",
+      "severity": "info"
+    },
+    {
+      "name": "disc_primary_highest",
+      "status": "FAIL",
+      "message": "Primary Type D hat nicht den höchsten Score",
+      "severity": "error"
+    },
+    {
+      "name": "disc_bio_plausibility",
+      "status": "WARNING",
+      "message": "DISC-Typ D nicht offensichtlich aus Bio erkennbar",
+      "severity": "info"
+    },
+    {
+      "name": "disc_confidence_range",
+      "status": "WARNING",
+      "message": "DISC-Confidence außerhalb erwartetem Bereich (30.0%, erwartet: 50-70%)",
+      "severity": "warning"
+    },
+    {
+      "name": "neo_openness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension openness im Range (0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_conscientiousness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension conscientiousness im Range (0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_extraversion_range",
+      "status": "PASS",
+      "message": "NEO-Dimension extraversion im Range (0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_agreeableness_range",
+      "status": "PASS",
+      "message": "NEO-Dimension agreeableness im Range (0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_neuroticism_range",
+      "status": "PASS",
+      "message": "NEO-Dimension neuroticism im Range (0.50)",
+      "severity": "info"
+    },
+    {
+      "name": "neo_confidence_range",
+      "status": "WARNING",
+      "message": "NEO-Confidence außerhalb erwartetem Bereich (30.0%, erwartet: 40-60%)",
+      "severity": "warning"
+    },
+    {
+      "name": "riasec_code_format",
+      "status": "PASS",
+      "message": "Holland-Code Format korrekt (IES)",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_primary_match",
+      "status": "PASS",
+      "message": "Primary Type I stimmt mit Holland-Code überein",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_score_sum",
+      "status": "PASS",
+      "message": "RIASEC-Score-Summe plausibel (1.00)",
+      "severity": "info"
+    },
+    {
+      "name": "riasec_confidence_bio",
+      "status": "WARNING",
+      "message": "RIASEC-Confidence nur Bio außerhalb erwartetem Bereich (25.0%, erwartet: 45-60%)",
+      "severity": "warning"
+    },
+    {
+      "name": "persuasion_score_sum",
+      "status": "WARNING",
+      "message": "Persuasion-Score-Summe ungewöhnlich (1.00, erwartet: ~3.5)",
+      "severity": "warning"
+    },
+    {
+      "name": "persuasion_primary_score",
+      "status": "WARNING",
+      "message": "Primary Persuasion-Score niedrig (0.21, erwartet: >0.6)",
+      "severity": "warning"
+    },
+    {
+      "name": "persuasion_confidence_range",
+      "status": "WARNING",
+      "message": "Persuasion-Confidence außerhalb erwartetem Bereich (35.0%, erwartet: 60-75%)",
+      "severity": "warning"
+    },
+    {
+      "name": "cross_disc_neo_d_extraversion",
+      "status": "WARNING",
+      "message": "D-Typ mit niedriger Extraversion (0.50) ungewöhnlich",
+      "severity": "info"
+    },
+    {
+      "name": "cross_disc_comm_style",
+      "status": "PASS",
+      "message": "D-Typ + direkter Kommunikationsstil konsistent",
+      "severity": "info"
+    },
+    {
+      "name": "confidence_overall_low",
+      "status": "WARNING",
+      "message": "Overall Confidence sehr niedrig (17.0%), Ergebnisse mit Vorsicht interpretieren",
+      "severity": "warning"
+    },
+    {
+      "name": "confidence_order",
+      "status": "WARNING",
+      "message": "RIASEC-Confidence (25.0%) niedriger als NEO (30.0%), ungewöhnlich",
+      "severity": "info"
+    },
+    {
+      "name": "warnings_consistency",
+      "status": "PASS",
+      "message": "Warnungen konsistent (4 Warnungen)",
+      "severity": "info"
+    },
+    {
+      "name": "string_format_valid",
+      "status": "PASS",
+      "message": "Profil-String Format korrekt",
+      "severity": "info"
+    },
+    {
+      "name": "string_length",
+      "status": "PASS",
+      "message": "Profil-String Länge OK (94 Zeichen)",
+      "severity": "info"
+    }
+  ],
+  "summary": {
+    "total_checks": 28,
+    "passed": 15,
+    "warnings": 12,
+    "failed": 1
+  }
+}
